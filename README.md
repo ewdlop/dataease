@@ -79,6 +79,52 @@ curl -sSL https://dataease.oss-cn-hangzhou.aliyuncs.com/quick_start_v2.sh | bash
 -   数据处理：[Apache Calcite](https://github.com/apache/calcite/)、[Apache SeaTunnel](https://github.com/apache/seatunnel)
 -   基础设施：[Docker](https://www.docker.com/)
 
+这是一个现代技术栈的组合，非常适合开发企业级或数据驱动型的应用程序。以下是对各技术的简要说明以及它们如何协同工作：
+
+---
+
+### **前端：Vue.js、Element**
+- **Vue.js**: 一个流行的前端框架，提供高效的组件化开发，适用于响应式和交互式的用户界面。
+- **Element**: 基于 Vue 的 UI 组件库，包含丰富的组件（如表单、表格、对话框等），适合快速构建美观、统一的前端界面。
+
+
+### **图库：AntV**
+- **AntV**: 一个强大的数据可视化库，支持多种图表（折线图、柱状图、关系图等）和交互设计，非常适合构建数据分析应用。
+
+### **后端：Spring Boot**
+- **Spring Boot**: 一个轻量级的 Java 框架，便于快速构建生产级的后端应用，支持多种数据库、RESTful 接口以及微服务架构。
+
+
+### **数据库：MySQL**
+- **MySQL**: 一个开源关系型数据库，适用于存储结构化数据，支持高效的查询操作和事务管理。
+- 可与 Spring Boot 无缝集成，通过 JPA 或 MyBatis 实现数据的持久化。
+
+
+### **数据处理：Apache Calcite、Apache SeaTunnel**
+- **Apache Calcite**: 一个动态数据管理框架，支持 SQL 查询的解析、优化和执行，可以作为数据处理的核心组件。
+- **Apache SeaTunnel**: 一个数据集成工具，支持批处理和流处理，适合构建 ETL（提取、转换、加载）管道。
+
+### **基础设施：Docker**
+- **Docker**: 一个容器化平台，可以轻松实现应用的打包、分发和部署。适合构建微服务架构和支持快速扩展。
+
+---
+
+### **协作方式**
+1. **数据流**：
+   - 用户通过 Vue.js 前端与系统交互。
+   - Element 提供友好的用户界面。
+   - 用户行为或数据输入通过 API 请求发送到 Spring Boot 后端。
+   - Spring Boot 使用 MySQL 存储或查询数据，并通过 AntV 在前端展示分析结果。
+
+2. **数据处理**：
+   - Apache SeaTunnel 负责数据的采集和预处理。
+   - Apache Calcite 负责动态执行复杂的 SQL 查询，提升数据处理效率。
+
+3. **部署**：
+   - Docker 用于将前端、后端、数据库和数据处理工具封装成独立的容器，方便部署到云平台。
+
+这种组合既现代又灵活，适合大多数企业级应用开发需求。如果有特定的场景或项目需求，可以进一步定制和优化技术选型。
+
 ## 飞致云的其他明星项目
 
 - [1Panel](https://github.com/1panel-dev/1panel/) - 现代化、开源的 Linux 服务器运维管理面板
