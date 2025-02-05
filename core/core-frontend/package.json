@@ -50,7 +50,7 @@
     "qs": "^6.11.0",
     "screenfull": "^6.0.2",
     "snowflake-id": "^1.1.0",
-    "tinymce": "^5.8.2",
+    "tinymce": "^7.6.1",
     "vant": "^4.8.3",
     "video.js": "^7.21.6",
     "vue": "^3.3.4",
